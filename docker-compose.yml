@@ -1,0 +1,11 @@
+version: '3.8'  # Define a versão da sintaxe do Docker Compose a ser usada
+
+services:
+  app:  # Nome do serviço (neste caso, sua aplicação Spring Boot)
+    build: .  # Indica que o Dockerfile está na raiz do projeto (mesmo diretório do docker-compose.yml)
+    container_name: api # Nome personalizado para o container (opcional, facilita na identificação)
+    ports:
+      - "8080:8080"  # Mapeia a porta 8080 do container para a 8080 da máquina local
+    volumes:
+      - ./database:/app/database  # Monta a pasta local "database" na pasta "/app/database" do container
+      # Isso garante que o arquivo SQLite (.db) fique disponível para o Spring Boot dentro do container

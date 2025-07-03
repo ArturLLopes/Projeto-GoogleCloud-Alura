@@ -34,3 +34,9 @@ docker build -t projeto-escola-java21 .
 
 Rodar o container:
 docker run -p 8080:8080 projeto-escola-java21
+
+
+Comandos para rodar
+docker compose up
+docker-compose up --build
+

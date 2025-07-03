@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @GetMapping("/")
     public String home() {
-        return "Pag inicial, Spring Boot está rodando!";
+        return "Pag inicial, Spring Boot está rodando! Acesse http://localhost:8080/swagger-ui/index.html#/";
     }
 }
