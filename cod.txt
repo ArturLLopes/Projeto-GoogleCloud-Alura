@@ -1,0 +1,36 @@
+# Desenvolvimento (equivalente ao venv ativado)
+./gradlew runDev
+# ou
+./gradlew bootRun -Dspring.profiles.active=dev
+./gradlew bootRun
+
+# Produção
+./gradlew runProd
+# ou
+./gradlew bootRun -Dspring.profiles.active=prod
+
+# Build específico por ambiente
+./gradlew buildDev -Pprofile=dev
+./gradlew buildProd -Pprofile=prod
+
+# Testes (sempre usa profile test)
+./gradlew test
+
+
+http://localhost:8080/swagger-ui.html
+
+
+***dependencias usadas***
+spring-boot-starter-web
+spring-boot-starter-tomcat
+jackson-databind + hibernate-validator
+spring-boot-starter-data-jpa
+hibernate-validator + commons-email
+spring-boot-starter-webflux kotlin-reflect
+
+
+Build da imagem:
+docker build -t projeto-escola-java21 .
+
+Rodar o container:
+docker run -p 8080:8080 projeto-escola-java21
