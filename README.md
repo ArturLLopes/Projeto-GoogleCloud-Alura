@@ -12,7 +12,7 @@ Este projeto demonstra como desenvolver e publicar uma aplicação Java com Spri
 ## 📸 Demonstração
 
 ![Demonstração do app em execução](https://github.com/user-attachments/assets/a23eb513-2a41-48d5-ae70-511be40697f7)
-
+![CRUD no ar](https://api-cors-1-798462238118.southamerica-east1.run.app/swagger-ui/index.html#/)
 ## 🚀 Funcionalidades
 
 - **API REST completa** com Spring Boot
