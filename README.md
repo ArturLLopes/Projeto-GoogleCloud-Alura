@@ -126,13 +126,8 @@ docker-compose up -d
 gcloud builds submit --config cloudbuild.yaml
 
 # Ou deploy direto
-gcloud run deploy projeto-alura \
-  --source . \
-  --platform managed \
-  --allow-unauthenticated \
-  --memory 512Mi \
-  --cpu 1 \
-  --max-instances 10
+gcloud run deploy --port=8080 \
+  
 ```
 
 ### 📊 Configuração de monitoramento
